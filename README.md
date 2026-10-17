@@ -33,6 +33,24 @@ Humor: 2
 - `knowledge/tom-de-voz.md`: direção de linguagem e exemplos criados para o protótipo.
 - `VALIDACAO.md`: cenários para experimentar e critérios de revisão.
 
+## Exemplo de uso
+
+No cenário abaixo, o vendedor busca entender o risco percebido pelo dono de uma padaria antes de propor a entrada de FYS. O canal escolhido é WhatsApp, com humor 2 e sem condições comerciais confirmadas.
+
+**Fala do cliente:**
+
+> Ninguém pede FYS aqui. Tenho medo de comprar e ficar encalhado.
+
+**Mensagem sugerida pelo copiloto em um teste realizado pelo usuário:**
+
+> Entendo seu receio de comprar e ficar com produto parado. Prometer que FYS vende sozinha daria um belo comercial. Pra sua padaria, prefiro entender o que faz sentido: quando você avalia uma bebida nova, o que precisa ver para considerar que vale a pena?
+
+A resposta reconhece o risco, usa autoironia sobre promessas publicitárias e investiga o critério de decisão. Não promete giro nem oferece descontos, consignação ou troca sem confirmação.
+
+O copiloto também entrega diagnóstico, perguntas de qualificação, abordagem, resposta à objeção, próxima ação e fundamentos nas seções A–G. Veja a [resposta completa deste teste](evidencias/receio-de-encalhe.md) e a [avaliação dos nove cenários](VALIDACAO.md).
+
+Teste registrado em 16/10/2026, no ChatGPT, com o modelo informado pelo usuário como GPT-6.1 Sol Leve. Trata-se de uma simulação para avaliar o protótipo, sem medição de resultados comerciais reais.
+
 ## Abordagem e limites
 
 Esta versão funciona por prompt com contexto fornecido na conversa. Não tem integração com estoque, catálogo, CRM ou WhatsApp e não envia mensagens. A base não representa treinamento do modelo. Nenhum resultado comercial foi medido. Há respostas de testes manuais fornecidas pelo usuário e revisadas em [VALIDACAO.md](VALIDACAO.md), com evidências e limitações de configuração registradas. Os nove cenários foram aprovados no conteúdo observado; isso não garante resultados em produção ou em outros modelos.
